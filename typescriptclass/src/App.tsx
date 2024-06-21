@@ -10,6 +10,7 @@ import Parent from './passingcomponent/Parent';
 import Child from './passingcomponent/Child';
 import SignIn from './hooks/SignIn';
 import Counter from './hooks/Counter';
+import Content from './context/Content';
 
 function App() {
   //object
@@ -37,6 +38,7 @@ function App() {
       {/* <Parent children={<Child/>}/>
       <SignIn/> */}
       <Counter/>
+      <Content/>
     </div>
   );
 }
