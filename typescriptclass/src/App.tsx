@@ -8,6 +8,8 @@ import Teams from './Teams';
 import LogLevel from './LogLevel';
 import Parent from './passingcomponent/Parent';
 import Child from './passingcomponent/Child';
+import SignIn from './hooks/SignIn';
+import Counter from './hooks/Counter';
 
 function App() {
   //object
@@ -32,7 +34,9 @@ function App() {
       <Team IPL={IPL}/>
       <Teams team={team}/>
       <LogLevel status="info"/> */}
-      <Parent children={<Child/>}/>
+      {/* <Parent children={<Child/>}/>
+      <SignIn/> */}
+      <Counter/>
     </div>
   );
 }
