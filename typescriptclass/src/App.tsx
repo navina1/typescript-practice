@@ -5,6 +5,9 @@ import Home from './Home';
 import PersonDetails from './PersonDetails';
 import Team from './Team';
 import Teams from './Teams';
+import LogLevel from './LogLevel';
+import Parent from './passingcomponent/Parent';
+import Child from './passingcomponent/Child';
 
 function App() {
   //object
@@ -24,10 +27,12 @@ function App() {
   ]
   return (
     <div className="App">
-      <Home name="Navina" age={31} isElegible={true}/>
+      {/* <Home name="Navina" age={31} isElegible={true}/>
       <PersonDetails Details={details}/>
       <Team IPL={IPL}/>
       <Teams team={team}/>
+      <LogLevel status="info"/> */}
+      <Parent children={<Child/>}/>
     </div>
   );
 }
